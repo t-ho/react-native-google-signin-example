@@ -140,3 +140,13 @@ buildscript {
 }
 
 ```
+
+## Step 4 - iOS setup
+
+In Xcode, open `Info` tab as below:
+
+![step-4-01](https://raw.githubusercontent.com/t-ho/react-native-google-signin-example/assets/assets/step-4-01.png)
+
+Under `URL Types` section, click `+` button. In the `URL schemes` field, enter your reversed `iOS-Client-ID`:
+
+![step-4-02](https://raw.githubusercontent.com/t-ho/react-native-google-signin-example/assets/assets/step-4-02.png)
