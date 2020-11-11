@@ -111,3 +111,32 @@ Find Bundle Identifier in Xcode:
 ![step-2-10](https://raw.githubusercontent.com/t-ho/react-native-google-signin-example/assets/assets/step-2-10.png)
 
 Please take a note of your `iOS-Client-Id`, in my case: `564624695351-km9381h44o25uijjbk29ga0unfck5cal.apps.googleusercontent.com`
+
+## Step 3 - Android setup
+
+Update `android/build.gradle`:
+
+NOTE: You can find the latest version of `googlePlayServicesAuth` [here](https://mvnrepository.com/artifact/com.google.android.gms/play-services-auth?repo=google) and `google-services` [here](https://mvnrepository.com/artifact/com.google.gms/google-services?repo=google)
+
+```gradle
+buildscript {
+    ext {
+        buildToolsVersion = "29.0.2"
+        minSdkVersion = 16
+        compileSdkVersion = 29
+        targetSdkVersion = 29
+        googlePlayServicesAuthVersion = "19.0.0" // <-- add this
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:4.1.0")
+        classpath('com.google.gms:google-services:4.3.4') // <-- add this
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+```
