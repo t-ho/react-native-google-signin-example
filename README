@@ -1,0 +1,10 @@
+# React Native Google Sigin Example
+
+## Step 1 - Install Google Signin
+Install [@react-native-community/google-signin](https://github.com/react-native-google-signin/google-signin)
+
+```bash
+npm install @react-native-community/google-signin
+
+npx pod-install
+```
